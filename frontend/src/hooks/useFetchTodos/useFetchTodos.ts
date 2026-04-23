@@ -16,7 +16,6 @@ export const useFetchTodos = () => {
   const [loading, setLoading] = useState(false);
   const fetchTodos = useCallback(async (): Promise<Result> => {
     setLoading(true);
-    console.log('Fetching todos from API:', API);
     try {
       const response = await fetch(`${API}`, {
         method: 'GET',

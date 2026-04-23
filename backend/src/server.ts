@@ -18,9 +18,7 @@ app.use('/todos', router);
 
 try {
   app.listen(PORT, () => {
-    console.log(
-      `server running at://localhost:${PORT} and connected to frontend at ${process.env.PRD_FRONTEND || process.env.DEV_FRONTEND}`,
-    );
+    console.log(`server running at://localhost:${PORT}`);
   });
 } catch (error) {
   if (error instanceof Error) {

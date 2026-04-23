@@ -1,0 +1,161 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoTemplateコンポーネントのテスト > スナップショットが一致すること 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
+  >
+    <div
+      class="MuiBox-root css-pi4pwo"
+    >
+      <h4
+        class="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter css-1n6tynw-MuiTypography-root"
+        style="--Typography-textAlign: center;"
+      >
+        TodoList
+      </h4>
+      <form>
+        <div
+          class="MuiBox-root css-qr12fg"
+        >
+          <div
+            aria-label="text field"
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-4go5ri-MuiFormControl-root-MuiTextField-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for="«rf»"
+              id="«rf»-label"
+            >
+              New Todo
+              <span
+                aria-hidden="true"
+                class="MuiFormLabel-asterisk MuiInputLabel-asterisk css-1ljffdk-MuiFormLabel-asterisk"
+              >
+                 *
+              </span>
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                id="«rf»"
+                name="todo"
+                required=""
+                type="text"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-81qg8w"
+                >
+                  <span>
+                    New Todo *
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <button
+            aria-label="add todo"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1svfwy9-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="AddIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <hr
+        class="MuiDivider-root MuiDivider-fullWidth css-moyov0-MuiDivider-root"
+      />
+      <div
+        class="MuiBox-root css-u0w3gk"
+      >
+        <div
+          class="MuiCardContent-root css-1791yzb-MuiCardContent-root"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-xza792-MuiTypography-root"
+          >
+            テストTodo
+          </p>
+        </div>
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-1qriitv-MuiCardActions-root"
+        >
+          <button
+            aria-label="complete todo"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSuccess MuiIconButton-sizeMedium css-14of8of-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="CheckCircleIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="edit todo"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1svfwy9-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="EditIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="delete todo"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-uhgf5e-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="DeleteIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

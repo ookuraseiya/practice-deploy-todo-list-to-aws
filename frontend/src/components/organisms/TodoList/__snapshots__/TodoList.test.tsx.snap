@@ -1,0 +1,151 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoList コンポーネント > スナップショットテスト 1`] = `
+<DocumentFragment>
+  <hr
+    class="MuiDivider-root MuiDivider-fullWidth css-moyov0-MuiDivider-root"
+  />
+  <div
+    class="MuiBox-root css-u0w3gk"
+  >
+    <div
+      class="MuiCardContent-root css-1791yzb-MuiCardContent-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-xza792-MuiTypography-root"
+      >
+        Task 1
+      </p>
+    </div>
+    <div
+      class="MuiCardActions-root MuiCardActions-spacing css-1qriitv-MuiCardActions-root"
+    >
+      <button
+        aria-label="complete todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSuccess MuiIconButton-sizeMedium css-14of8of-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="CheckCircleIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="edit todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1svfwy9-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="EditIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="delete todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-uhgf5e-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="DeleteIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root css-u0w3gk"
+  >
+    <div
+      class="MuiCardContent-root css-1791yzb-MuiCardContent-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-j30fcq-MuiTypography-root"
+      >
+        Task 2
+      </p>
+    </div>
+    <div
+      class="MuiCardActions-root MuiCardActions-spacing css-1qriitv-MuiCardActions-root"
+    >
+      <button
+        aria-label="incomplete todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorWarning MuiIconButton-sizeMedium css-liaxzy-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="UndoIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="edit todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium css-1svfwy9-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="EditIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="delete todo"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-uhgf5e-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="DeleteIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

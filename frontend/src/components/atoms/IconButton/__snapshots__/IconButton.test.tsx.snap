@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconButton コンポーネント > レンダリングが一致すること（スナップショットテスト） 1`] = `
+<DocumentFragment>
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    Click Me
+  </button>
+</DocumentFragment>
+`;

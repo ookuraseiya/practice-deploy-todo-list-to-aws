@@ -5,9 +5,14 @@ import { router } from './routes/todoRoutes';
 const app: Application = express();
 const PORT = 3001 as const;
 
+console.log(
+  `[env] NODE_ENV = ${process.env.NODE_ENV ?? 'undefined'}`,
+  `[env] FRONTEND_URL = ${process.env.FRONTEND_URL ?? 'undefined'}`,
+);
+
 app.use(
   cors({
-    origin: `${process.env.PRD_FRONTEND || process.env.DEV_FRONTEND}`,
+    origin: `${process.env.FRONTEND_URL || 'http://localhost:3000'}`,
     optionsSuccessStatus: 200,
   }),
 );

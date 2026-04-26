@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { TodoType } from '../../types/TodoType';
 import { isAnotherTodoArrayType } from '../../types/AnotherTodoArrayType';
-import { API } from '../../config/config';
+import { env } from '../../config/env';
 
 type Result =
   | {
@@ -17,7 +17,7 @@ export const useFetchTodos = () => {
   const fetchTodos = useCallback(async (): Promise<Result> => {
     setLoading(true);
     try {
-      const response = await fetch(`${API}`, {
+      const response = await fetch(`${env.NEXT_PUBLIC_API_HOST}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

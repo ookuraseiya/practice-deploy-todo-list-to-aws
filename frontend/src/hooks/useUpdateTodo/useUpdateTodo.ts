@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { isTodoType, TodoType } from '../../types/TodoType';
-import { API } from '../../config/config';
+import { env } from '../../config/env';
 
 type Result =
   | {
@@ -19,11 +19,11 @@ export const useUpdateTodo = () => {
       editTodoName: string,
       editTodoIsCompleted: boolean,
       editTodoCreatedAt: string,
-      todos: TodoType[]
+      todos: TodoType[],
     ): Promise<Result> => {
       setLoading(true);
       try {
-        const response = await fetch(`${API}/update`, {
+        const response = await fetch(`${env.NEXT_PUBLIC_API_HOST}/update`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export const useUpdateTodo = () => {
             createdAt: string;
           }) => {
             return todo.id === newTodo.id ? { ...newTodo } : todo;
-          }
+          },
         );
         return { isSuccess: true, newTodos };
       } catch (error) {
@@ -63,7 +63,7 @@ export const useUpdateTodo = () => {
         setLoading(false);
       }
     },
-    []
+    [],
   );
   return { updateTodo, loading };
 };

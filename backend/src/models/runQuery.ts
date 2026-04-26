@@ -1,13 +1,12 @@
-import dotenvFlow from 'dotenv-flow';
 import mysql from 'mysql2/promise';
-
-dotenvFlow.config();
+import { env } from '../config/env';
 
 const pool = mysql.createPool({
-  host: process.env.MYSQL_HOST ?? 'localhost',
-  user: process.env.MYSQL_USER ?? 'root',
-  password: process.env.MYSQL_PASSWORD ?? '',
-  database: process.env.MYSQL_DATABASE ?? 'test',
+  host: env.MYSQL_HOST,
+  user: env.MYSQL_USER,
+  password: env.MYSQL_PASSWORD,
+  database: env.MYSQL_DATABASE,
+  port: env.MYSQL_PORT,
   connectionLimit: 10,
 });
 

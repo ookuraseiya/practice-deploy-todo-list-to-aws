@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { isTodoType, TodoType } from '../../types/TodoType';
-import { API } from '../../config/config';
+import { env } from '../../config/env';
 
 type Result =
   | {
@@ -16,7 +16,7 @@ export const useAddTodo = () => {
   const addTodo = useCallback(async (todo: string): Promise<Result> => {
     setLoading(true);
     try {
-      const response = await fetch(`${API}/add`, {
+      const response = await fetch(`${env.NEXT_PUBLIC_API_HOST}/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

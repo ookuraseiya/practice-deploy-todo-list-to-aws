@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { TodoType } from '../../types/TodoType';
-import { API } from '../../config/config';
+import { env } from '../../config/env';
 
 type Result =
   | {
@@ -17,7 +17,7 @@ export const useIncompleteTodo = () => {
     async (id: string, todos: TodoType[]): Promise<Result> => {
       setLoading(true);
       try {
-        const response = await fetch(`${API}/incomplete`, {
+        const response = await fetch(`${env.NEXT_PUBLIC_API_HOST}/incomplete`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export const useIncompleteTodo = () => {
           throw new Error(error);
         }
         const newTodos = todos.map((todo) =>
-          todo.id === id ? { ...todo, isCompleted: false } : todo
+          todo.id === id ? { ...todo, isCompleted: false } : todo,
         );
         return { isSuccess: true, newTodos };
       } catch (error) {
@@ -39,7 +39,7 @@ export const useIncompleteTodo = () => {
         setLoading(false);
       }
     },
-    []
+    [],
   );
   return { incompleteTodo, loading };
 };

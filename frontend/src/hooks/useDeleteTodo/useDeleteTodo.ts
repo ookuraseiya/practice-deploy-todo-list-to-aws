@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { TodoType } from '../../types/TodoType';
-import { API } from '../../config/config';
+import { env } from '../../config/env';
 
 type Result =
   | {
@@ -17,7 +17,7 @@ export const useDeleteTodo = () => {
     async (id: string, todos: TodoType[]): Promise<Result> => {
       setLoading(true);
       try {
-        const response = await fetch(`${API}/delete`, {
+        const response = await fetch(`${env.NEXT_PUBLIC_API_HOST}/delete`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export const useDeleteTodo = () => {
         setLoading(false);
       }
     },
-    []
+    [],
   );
   return { deleteTodo, loading };
 };

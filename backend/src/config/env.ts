@@ -1,20 +1,26 @@
 import { config } from 'dotenv';
 
 const NODE_ENV = process.env.NODE_ENV ?? 'development';
+const ENV_ERROR_PREFIX = '[env]' as const;
+
+const ERRORS = {
+  MISSING_ENV: (key: string, env: string) =>
+    `${ENV_ERROR_PREFIX} Environment variable "${key}" is not set (.env.${env})`,
+
+  LOAD_FAILED: (env: string, message: string) =>
+    `${ENV_ERROR_PREFIX} Failed to load .env.${env}: ${message}`,
+} as const;
+
 const result = config({ path: `.env.${NODE_ENV}` });
 
 if (result.error) {
-  throw new Error(
-    `[env] .env.${NODE_ENV} の読み込みに失敗しました: ${result.error.message}`,
-  );
+  throw new Error(ERRORS.LOAD_FAILED(NODE_ENV, String(result.error)));
 }
 
 const getEnv = (key: string): string => {
   const value = process.env[key];
   if (!value) {
-    throw new Error(
-      `[env] 環境変数 "${key}" が設定されていません (.env.${NODE_ENV})`,
-    );
+    throw new Error(ERRORS.MISSING_ENV(key, NODE_ENV));
   }
   return value;
 };

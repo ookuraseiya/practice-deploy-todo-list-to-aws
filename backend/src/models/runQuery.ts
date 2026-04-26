@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   password: env.MYSQL_PASSWORD,
   database: env.MYSQL_DATABASE,
   port: env.MYSQL_PORT,
-  connectionLimit: 10,
+  connectionLimit: env.MYSQL_CONNECTION_LIMIT,
 });
 
 type QueryValue = string | number;

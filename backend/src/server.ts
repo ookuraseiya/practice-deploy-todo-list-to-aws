@@ -17,7 +17,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/todos', router);
+app.use('/api', router);
 
 try {
   app.listen(env.PORT, () => {

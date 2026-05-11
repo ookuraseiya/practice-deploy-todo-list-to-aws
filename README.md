@@ -26,7 +26,7 @@ comming soon...
   - ALB（Application Load Balancer）
   - Route53（DNS）
   - ACM（SSL証明書）
-  - VPC / Subnet（Public構成）
+  - VPC / Subnet（Public・Private構成）
 - ドメイン
   - お名前.com（ドメイン取得）
   - Route53へ委任
